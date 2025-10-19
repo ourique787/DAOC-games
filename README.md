@@ -10,7 +10,8 @@ Antes de rodar o projeto, você precisa obter uma chave de API gratuita:
 2. Clique em "Get API Key"
 3. Faça um cadastro rápido (email + senha)
 4. Copie sua chave de API
-5. Adicione sua key em src/services/api.js
+5. Adicione sua key em `src/services/api.js`, dentro de `const API_KEY = 'api-key';`
+6. Substitua `api-key` pela key equivalente
 
 Sem a API key o projeto não vai funcionar!
 
