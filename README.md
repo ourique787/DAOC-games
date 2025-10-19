@@ -1,16 +1,49 @@
-# React + Vite
+# 🎮 DAOC Games
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Catálogo de jogos desenvolvido com React e Tailwind CSS, consumindo a API RAWG.
 
-Currently, two official plugins are available:
+## ⚠️ IMPORTANTE - Configuração da API Key
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Antes de rodar o projeto, você precisa obter uma chave de API gratuita:
 
-## React Compiler
+1. Acesse https://rawg.io/apidocs
+2. Clique em "Get API Key"
+3. Faça um cadastro rápido (email + senha)
+4. Copie sua chave de API
+5. Adicione sua key em src/services/api.js
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Sem a API key o projeto não vai funcionar!
 
-## Expanding the ESLint configuration
+## Tecnologias
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite
+- Tailwind CSS v4
+- RAWG API
+
+## Como rodar
+```bash
+# Instalar dependências
+npm install
+
+# Rodar em desenvolvimento
+npm run dev
+```
+
+Depois acesse http://localhost:5173
+
+## Funcionalidades
+
+- Listagem de jogos populares
+- Sistema de busca
+- Detalhes de cada jogo (clique no card)
+- Design responsivo
+- Loading states
+
+Projeto desenvolvido como avaliação na disciplina de Desenvolvimento de Aplicações Orientada a Componentes
+
+
+## Observações
+
+- A API tem limite de requisições, então evite fazer muitas buscas seguidas
+- As imagens podem demorar um pouco pra carregar dependendo da internet
